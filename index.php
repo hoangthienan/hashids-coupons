@@ -46,6 +46,3 @@
     }
 
     $mysqli->close();
-
-    
-    
