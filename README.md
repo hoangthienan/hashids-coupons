@@ -2,7 +2,7 @@ Generate large number of unique coupons
 =======================================
 
 This library create promo codes which should be short in length (example ~ 6 characters) just storing the data in a table, setting an auto-increment and using that ID to hash out a 6-digit random code
-To use library you'll need to have Hashids. Hashids[hashids] is a small open-source library that generates short, unique, non-sequential ids from numbers.
+To use library you'll need to have Hashids. [Hashids](https://github.com/ivanakimov/hashids.php) is a small open-source library that generates short, unique, non-sequential ids from numbers.
 
  * [Installation](#installation)
  * [Usage](#usage)
@@ -10,14 +10,16 @@ To use library you'll need to have Hashids. Hashids[hashids] is a small open-sou
 
 Installation
 ------------
-with Composer[composer], in the root directory of your project:
+with Composer(https://getcomposer.org), in the root directory of your project:
+```bash
     composer install 
-
+```
 Usage
 -----
 
 Make sure the autoloader is included in your project's bootstrap file.
 
+```php
     require_once "vendor/autoload.php";
 
     use Hashids\Hashids;
@@ -65,6 +67,4 @@ Make sure the autoloader is included in your project's bootstrap file.
     }
 
     $mysqli->close();
-    
-[hashids]: https://github.com/ivanakimov/hashids.php
-[composer]: https://getcomposer.org/
+```
