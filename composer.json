@@ -1,5 +1,5 @@
 {
   "require": {
-    "hashids/hashids": "^1.0"
+    "hashids/hashids": "^4.0"
   }
 }
